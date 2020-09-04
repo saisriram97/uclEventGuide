@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+
+
+header {
+  background: url('https://answers.ea.com/t5/image/serverpage/image-id/108311i2720D267CCC9B743/image-size/original?v=1.0&px=-1');
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center top;
+  
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 35% 35% / 30%;
+}
+header .overlay{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  color: #FFF;
+  text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+  
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  padding-top: 25px;
+  color: #FFF;
+  text-shadow: 1px 1px 1px #333;
+   border-radius:  5% 5% 5% 5% / 2%;
+  background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+  
+}
+
+h1 {
+  
+  font-size: 80px;
+    font-family: 'Open Sans', sans-serif;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+      .button {
+  /*background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+    .button5 {
+      background-color: white;
+      color: black;
+      border: 2px solid #555555;
+    }
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+    .button5:hover {
+      background-color: #555555;
+      color: white;
+    }
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+.cardsyt {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.card{
+  background: black;
+  color:white;
+}
+
+.container {
+  padding: 0px 0px;
+ 
+}
+.cardown {
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 50px;
+  color: #333;
+  background: #fff;
+  margin-bottom: 10px;
+  width: 80%;
+
+  box-shadow: 0 3px 20px 0 #0000003b;
+}
+
+
+.cardown2 {
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 50px;
+  color: #333;
+  align-content: center;
+  background: #fff;
+  margin-bottom: 10px;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0 3px 20px 0 #0000003b;
+}
+.cardownbutton {
+  border: none;
+  outline: none;
+  padding: 13px;
+  border-radius: 50px;
+  align-content: center;
+  margin-bottom: 10px;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0 3px 20px 0 #0000003b;
+  text-decoration:none;
+  color:white;
+  font-size: 18px;
+}
+
+
+
+.cardownyt {
+  border: none;
+  outline: none;
+  padding: 0px;
+  border-radius: 20px;
+  color: #333;
+  background: #fff;
+  margin-bottom: 10px;
+  width: 80%;
+  align-content:  center;
+  box-shadow: 0 3px 20px 0 #0000003b;
+}
+
+
+.button2 {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #333;
+  text-align: center;
+  background: #fff;
+  margin-bottom: 5px;
+  box-shadow: 0 3px 20px 0 #0000003b;
+}
+.headerimg {
+  float: left;
+  float: top;
+  width: 75px;
+  height: 75px;
+}
+.footerWrap {
+    width:100%;
+  
+
+    bottom: 0px;
+}
+
+.footer {
+    width:200px;
+    margin:auto;
+}
+.footerContent {
+    float:left;
+    width:100%;
+    background-color:#555;
+    padding:20px 0;
+}
+.footer p {float:left; width:100%; text-align:center; }
+
+    </style>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+<body>
+
+
+<header>
+  <img class="headerimg" src="srwhite.png">
+  <div class="overlay">
+    
+<h1 style="font-size: 65px;">Event Guide</h1>
+  <br>
+
+    </div>
+</header>
+
+<div align="center" style="color:white;font-family: 'Poppins', sans-serif; font-size: 18px; padding: 2px;">
+
+<p style="color:black;"> How many coin packs do you want to purchase?? (there are total 14 coins packs left, where each pack gives 12 UCL energy)</p>
+
+<input  class="button2" id="cp" type="number" > 
+
+<!-- class="w3-white w3-panel w3-round-xlarge" -->
+ <div id="sgprogressname" style="color:black;display:block;">Today how many first round skill games have you completed?</div><input  class="button2" style="display:block;"id="sgprogress" type="number" value="0">
+ <input class="button2" type="submit" onclick="myFunction()">
+  <p class="cardown" id="demo"></p>
+  <p class="cardown" id="demo1"></p>
+  <p class="cardown" id="demo2"></p>
+  <p class="cardown" id="demo3"></p>
+  
+  <p class="cardown" id="demo4"></p>
+  <p class="cardown" id="demo5"></p>
+  <p class="cardown" id="demo6"></p>
+
+<div id="ptsname" style="color:black;display:none;">Enter the champion points you earned(spent + available now in game):</div><input  class="button2" style="display:none;"id="mypts" type="number" > 
+<p class="cardown" style="display:none;"id="outpts"></p>
+</div>
+<div class="bg">
+  <h2 style="text-align: center;text-decoration: underline;">INDIVIDUAL PLAYERS COST</h2>
+<div class="cards" style="padding: 15px" >
+
+  <div align="center">
+    <img class="cardown" src="icon.png">
+    <h3 class = "cardown2">UCL Pt: 2500 Champ Pt: 1600</h3>
+  </div>
+<div align="center">
+    <img class="cardown" src="1.png">
+    <h3 class = "cardown2">Champ Pt: 800</h3>
+  </div>
+
+  <div align="center">
+    <img class="cardown" src="2.png">
+    <h3 class = "cardown2">Champ Pt: 800</h3>
+  </div>
+
+    <div align="center">
+    <img class="cardown" src="3.png">
+    <h3 class = "cardown2">Champ Pt: 800</h3>
+  </div>
+    <div align="center">
+    <img class="cardown" src="4.png">
+    <h3 class = "cardown2">Champ Pt: 800</h3>
+  </div>
+  <div align="center">
+    <img class="cardown" src="5.png">
+    <h3 class = "cardown2">Champ Pt: 800</h3>
+  </div>
+   <div align="center">
+    <img class="cardown" src="6.png">
+    <h3 class = "cardown2">Champ Pt: 800</h3>
+  </div>
+    <div align="center">
+    <img class="cardown" src="7.png">
+    <h3 class = "cardown2">Champ Pt: 800</h3>
+  </div>
+  <div align="center">
+    <img class="cardown" src="8.png">
+    <h3 class = "cardown2">Champ Pt: 800</h3>
+  </div>
+   <div align="center">
+    <img class="cardown" src="9.png">
+    <h3 class = "cardown2">Champ Pt: 800</h3>
+  </div>
+   <div align="center">
+    <img class="cardown" src="10.png">
+    <h3 class = "cardown2">Champ Pt: 800</h3>
+  </div>
+   <div align="center">
+    <img class="cardown" src="11.png">
+    <h3 class = "cardown2">Champ Pt: 800</h3>
+  </div>
+  
+ 
+ 
+ </div>
+ </div>
+ <div style="background-color: white;">
+  <div  class="cardsyt"> 
+ 
+<p align="center"><iframe class="cardownyt" width="560" height="315" src="https://www.youtube.com/embed/TbeEAApfTlg" ></iframe></p>
+<p align="center"><iframe class="cardownyt" width="560" height="315" src="https://www.youtube.com/embed/h19agc0U8jo" ></iframe></p>
+
+</div>
+  </div>
+
+
+
+  <div class="footerWrap" style="padding:20px;background-color: #555">
+      <div class="footer">
+  <a style="background-color: #ff0a00;color: white;" href="https://www.youtube.com/c/SaiSriRam" target="_blank" class="cardownbutton">Youtube</a>
+  <a style="background-color: #1da0f2;color: white;align-items:center;" href="https://twitter.com/saisriramn" target="_blank" class="cardownbutton">Twitter</a>
+</div>     
+</div>
+
+
+
+
+
+
+<script>
+  //parent.document.getElementsByTagName('iframe')[0].scrolling="no";
+  window.onload = codeAddress;
+  function codeAddress() {
+         //   alert('ok');
+
+
+           document.getElementById("demo").innerHTML = "Time Now";
+  document.getElementById("demo1").innerHTML = "Event End Time";
+  document.getElementById("demo2").innerHTML = "Hourly UCL Energy Left";
+  document.getElementById("demo3").innerHTML = "Champion Points:";
+  document.getElementById("demo4").innerHTML = "UCL Points: Extreme node";
+  document.getElementById("demo5").innerHTML = "UCL Points: Expert node";
+  document.getElementById("demo6").innerHTML = "UCL Points: Hard node";
+
+        }
+        
+function myFunction() {
+ if(document.getElementById("cp").value <0 || document.getElementById("cp").value > 14){
+  document.getElementById("demo").innerHTML = "Please enter a positive number less than 14 for coin packs";
+  document.getElementById("demo1").innerHTML = "";
+  document.getElementById("demo2").innerHTML = "";
+  document.getElementById("demo3").innerHTML = "";
+  document.getElementById("demo4").innerHTML = "";
+  document.getElementById("demo5").innerHTML = "";
+  document.getElementById("demo6").innerHTML = "";
+
+ }
+ else{
+
+
+  if (document.getElementById("sgprogress").value <0 || document.getElementById("sgprogress").value > 5)
+
+ {
+ document.getElementById("demo").innerHTML = "Please enter a positive number less than 6 for skill game progress";
+  document.getElementById("demo1").innerHTML = "";
+  document.getElementById("demo2").innerHTML = "";
+  document.getElementById("demo3").innerHTML = "";
+  document.getElementById("demo4").innerHTML = "";
+  document.getElementById("demo5").innerHTML = "";
+  document.getElementById("demo6").innerHTML = "";
+
+
+
+
+
+ }else{
+
+
+
+        var stamina = (document.getElementById("cp").value)*12;
+        var d = new Date();
+        d.setUTCDate(17)
+        d.setUTCFullYear(2020)
+        d.setUTCHours(19)
+        d.setUTCMilliseconds(0)
+        d.setUTCMinutes(0)
+        d.setUTCMonth(8)
+        d.setUTCSeconds(0)
+        var d3 = d.toUTCString();
+
+        document.getElementById("demo1").innerHTML = "Event End Time: ".bold()+ d3;
+        var d1 = new Date();
+
+        var d4 = d1.toUTCString();
+        document.getElementById("demo").innerHTML = "Time Now: ".bold()+d4;
+
+        var diff = d.valueOf() - d1.valueOf();
+        var diffInHours = (diff/1000/60/60);
+        var abshours = Math.floor(diffInHours);
+        var ads = Math.floor(diffInHours/24)*9;
+        abshours = abshours -1;
+        document.getElementById("demo2").innerHTML = "Hourly UCL Energy Left: ".bold() + abshours + ", Stamina by watching Ads: ".bold()+ads + " ,from Coin Packs : ".bold()+stamina+", TOTAL UCL Energy: ".bold() + (abshours+ads+stamina);
+        var energyWithCp = Math.floor((abshours + ads + stamina)/3);
+        var ChampPts = energyWithCp*6;
+        var totstamina = (abshours+ads+stamina);
+
+        
+
+
+        
+        document.getElementById("demo3").innerHTML = "Champion Points: ".bold() + (ChampPts+200) +" (200 from Weekly Bonus)";
+        var remdays = ads/9;
+
+
+        var skgamprogr = parseInt(document.getElementById("sgprogress").value);
+        var skgame = [65,60,50,35,20,0];
+        var remstamina = totstamina - (remdays * 15) - (15-(skgamprogr*3));
+        var UClpts = skgame[skgamprogr]+ (65*remdays);
+        //alert("rem stamin "+remstamina+";skgame array"+skgame[skgamprogr]+";"+ (65*remdays) +";"+ (remstamina*4));
+        var remstby3 = Math.floor(remstamina/3);
+
+
+        document.getElementById("demo4").innerHTML = "UCL Points left: ".bold()+ (UClpts+ (remstby3*4))+ "(Considering you repeat the Extreme node)" ;
+
+
+        document.getElementById("demo5").innerHTML = "UCL Points left: ".bold()+ (UClpts+ (remstby3*3))+"(Considering you repeat the Expert node)";
+        document.getElementById("demo6").innerHTML = "UCL Points left: ".bold()+ (UClpts+ (remstby3*2))+"(Considering you repeat the Hard node)";
+
+        document.getElementById("mypts").style.display = "block";
+        document.getElementById("ptsname").style.display = "block";
+        document.getElementById("outpts").style.display = "block";
+        document.getElementById("outpts").innerHTML = "Your Points as of now:";
+        const source = document.getElementById('mypts');
+      const result = document.getElementById('outpts');
+
+      const inputHandler = function(e) {
+        var result1 = parseInt(e.target.value) + parseInt(ChampPts+200);
+        
+
+        result.innerHTML = "Total point: "+result1;
+      }
+
+      source.addEventListener('input', inputHandler);
+      source.addEventListener('propertychange', inputHandler);
+}
+}
+
+}
+
+
+</script>
+
+</body>
+</html>
