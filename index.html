@@ -232,7 +232,7 @@ grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   <p class="cardown" id="demo5"></p>
   <p class="cardown" id="demo6"></p>
 
-<div id="ptsname" style="color:black;display:none;">Enter the champion points you have:</div><input  class="button2" style="display:none;"id="mypts" type="number" > 
+<div id="ptsname" style="color:black;display:none;">Enter the champion points you earned(spent + available now in game):</div><input  class="button2" style="display:none;"id="mypts" type="number" > 
 <p class="cardown" style="display:none;"id="outpts"></p>
 </div>
 <div class="bg">
@@ -405,7 +405,7 @@ function myFunction() {
         var skgamprogr = parseInt(document.getElementById("sgprogress").value);
         var skgame = [65,60,50,35,20,0];
         var remstamina = totstamina - (remdays * 15) - (15-(skgamprogr*3));
-        var UClpts = skgame[skgamprogr]+ (65*remdays);
+        var UClpts = skgame[skgamprogr]+ (95*remdays);
         //alert("rem stamin "+remstamina+";skgame array"+skgame[skgamprogr]+";"+ (65*remdays) +";"+ (remstamina*4));
         var remstby3 = Math.floor(remstamina/3);
 
